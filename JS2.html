@@ -6,25 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS2</title>
     <script>
-        function bulb(a)
-        { var pic;
-            if(a==1)
-           pic = "https://www.w3schools.com/html/pic_bulbon.gif";
-           else
-           pic= " https://www.w3schools.com/html/pic_bulboff.gif";
+        function bulboff()
+        { 
 
-           document.getElementById('myImage').src = pic;
+           document.getElementById('myImage').src =" https://www.w3schools.com/html/pic_bulboff.gif";
+        }
+        function bulbon()
+        { 
 
-
-
+           document.getElementById('myImage').src = "https://www.w3schools.com/html/pic_bulbon.gif";
         }
     </script>
 </head>
 <body>
     <img id="myImage" src="https://www.w3schools.com/html/pic_bulboff.gif" alt="img was not found" height="300" width="200">
    <p>
-    <button type="button" onclick="bulb(1)">ON</button>
-   <button type="button" onclick="bulb(0)">OFF</button>
+    <button type="button" onclick="bulbon()">ON</button>
+   <button type="button" onclick="bulboff()">OFF</button>
    </p>
    
     <!--  https://www.w3schools.com/html/pic_bulboff.gif -->
