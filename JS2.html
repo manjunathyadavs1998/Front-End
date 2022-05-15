@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS2</title>
+    <script>
+        function bulb(a)
+        { var pic;
+            if(a==1)
+           pic = "https://www.w3schools.com/html/pic_bulbon.gif";
+           else
+           pic= " https://www.w3schools.com/html/pic_bulboff.gif";
+
+           document.getElementById('myImage').src = pic;
+
+
+
+        }
+    </script>
+</head>
+<body>
+    <img id="myImage" src="https://www.w3schools.com/html/pic_bulboff.gif" alt="img was not found" height="300" width="200">
+   <p>
+    <button type="button" onclick="bulb(1)">ON</button>
+   <button type="button" onclick="bulb(0)">OFF</button>
+   </p>
+   
+    <!--  https://www.w3schools.com/html/pic_bulboff.gif -->
+   <!-- https://www.w3schools.com/html/pic_bulbon.gif -->
+    
+    
+</body>
+</html>
